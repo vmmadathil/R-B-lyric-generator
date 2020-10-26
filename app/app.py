@@ -13,14 +13,20 @@ def hello():
 def generate():
     if request.method == 'GET':
         start_string = request.form['startString']
+        start_string = start_string.lower()
+        start_string = start_string + ' ' 
         x = predict(start_string)
         return render_template('results.html', prediction = x)
     elif request.method == 'POST':
         start_string = request.form['startString']
+        start_string = start_string.lower()
+        start_string = start_string + ' ' 
         x = predict(start_string)
         return render_template('results.html', prediction = x)
     else:
         start_string = request.form['startString']
+        start_string = start_string.lower()
+        start_string = start_string + ' ' 
         x = predict(start_string)
         return render_template('results.html', prediction = x)
 

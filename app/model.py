@@ -71,7 +71,7 @@ def makePrediction(start_string, model):
 
 def predict(start_string):
 
-    checkpoint_dir = '../../notebooks/checkpoints_2020.10.12-192750/content/checkpoints_2020'
+    checkpoint_dir = './checkpoints_2020'
     start_string = start_string
 
     model = loadModel(

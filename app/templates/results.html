@@ -10,7 +10,7 @@
     <body>
         <div class="s01">  
           <form action="{{ url_for('generate') }}" method="post">
-              <p> Beta V1.0 Note: NSFW</p>
+              <p> Beta V1.0 Note: NSFW Special Characters (!, @, #, $, %, etc.) are currently not supported</p>
                 <legend>Need Lyrics?</legend>
                 <h2> Enter the first line of your song and we'll make an R&B song for you</h2>
                 <div class="inner-form">
@@ -21,7 +21,7 @@
                   <input type="submit" value="Submit">   
                 </div>
                  </div>
-                 <br> 
+                 +<br> 
                  <br>
                  <h2> Your Song: </h2>
                  {{ prediction }}
